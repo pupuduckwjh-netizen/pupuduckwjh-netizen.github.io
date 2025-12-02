@@ -1,11 +1,96 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-    <meta charset="utf-8">
-    <title>我的 GitHub Pages 主页</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>世界那么大，我们去赚赚</title>
+    <style>
+        /* 1. 全局样式和背景 */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #f6f8fa; /* 模仿GitHub的浅灰色背景 */
+            color: #24292e;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh; /* 确保内容占据整个视口高度 */
+        }
+
+        /* 2. 容器样式 - 模仿GitHub Pages的居中内容区 */
+        .container {
+            width: 90%;
+            max-width: 800px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* 3. 图片展示区 */
+        .image-section {
+            width: 100%;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            /* 居上和居中 */
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .main-image {
+            max-width: 100%; /* 确保图片不会溢出容器 */
+            height: auto;
+            border-radius: 8px; /* 轻微圆角 */
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); /* 轻微阴影 */
+        }
+
+        /* 4. 按钮样式 - 模仿GitHub的Primary Button */
+        .action-button {
+            display: inline-block;
+            padding: 12px 24px;
+            font-size: 18px;
+            font-weight: 600;
+            text-decoration: none;
+            color: #ffffff; /* 白色文字 */
+            background-color: #2ea44f; /* GitHub绿色 */
+            border: 1px solid rgba(27, 31, 35, 0.2);
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+
+        .action-button:hover {
+            background-color: #2c974b; /* 悬停时颜色变深 */
+        }
+
+        /* 5. 提示文本 */
+        .tip-text {
+            margin-top: 15px;
+            font-size: 14px;
+            color: #6a737d; /* 灰色提示文字 */
+        }
+
+    </style>
 </head>
 <body>
-    <h1>新账户，新开始！配置成功！🚀</h1>
-    <p>这是我的个人主页，现在它将部署到 GitHub Pages 上。</p>
+
+    <div class="container">
+        
+        <header>
+            <h1>探索新世界</h1>
+        </header>
+        
+        <div class="image-section">
+            <img src="images/16888.jpg" alt="世界那么大，我们去赚赚" class="main-image">
+        </div>
+
+        <a href="https://t.me/abyl999_bot" class="action-button" target="_blank">
+            🚀 立即前往 Telegram Bot
+        </a>
+
+        <p class="tip-text">点击按钮，开启您的新旅程</p>
+
+    </div>
+
 </body>
 </html>
